@@ -4,7 +4,7 @@
   "title": "Chasing Adventure (PbtA)",
   "description": "Chasing Adventure custom sheet and compendium module, to be used with Asacolips' Powered by the Apocalypse system",
   "url":"https://github.com/mystyleigh/chasing-adventure-pbta",
-  "manifest":"https://github.com/mystyleigh/chasing-adventure-pbta/0.3.6/module.json",
+  "manifest":"https://raw.githubusercontent.com/mystyleigh/chasing-adventure-pbta/main/module.json",
   "download":"https://github.com/mystyleigh/chasing-adventure-pbta/archive/refs/tags/0.3.6.zip",
   "authors": [
     {
