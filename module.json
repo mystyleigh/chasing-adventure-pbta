@@ -1,0 +1,83 @@
+{
+  "id": "chasing-adventure-pbta",
+  "name": "chasing-adventure-pbta",
+  "title": "Chasing Adventure (PbtA)",
+  "description": "Chasing Adventure custom sheet and compendium module, to be used with Asacolips' Powered by the Apocalypse system",
+  "url":"https://github.com/mystyleigh/chasing-adventure-pbta",
+  "manifest":"https://github.com/mystyleigh/chasing-adventure-pbta/0.3.6/module.json",
+  "download":"https://github.com/mystyleigh/chasing-adventure-pbta/archive/refs/tags/0.3.6.zip",
+  "authors": [
+    {
+      "name": "Leigh Ann Kinnison",
+      "discord": "mystyleigh",
+      "flags": {}
+    }
+  ],
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11.315"
+  },
+  "relationships":{
+      "systems":[
+         {
+            "id":"pbta",
+            "type":"system",
+            "manifest":"https://asacolips-artifacts.s3.amazonaws.com/pbta/0.7.4/system.json",
+            "compatibility":{
+               "verified":"0.7.4"
+            }
+         }
+      ]
+   },
+  "esmodules":[
+     "./module/chasing-adventure-pbta.mjs"
+  ],
+  "packs": [
+    {
+      "label": "Items",
+      "type": "Item",
+      "name": "items",
+      "path": "packs/items",
+      "system":"pbta",
+      "private":false,
+      "flags":{}
+    },
+    {
+      "label": "Moves",
+      "type": "Item",
+      "name": "moves",
+      "path": "packs/moves",
+      "system":"pbta",
+      "private":false,
+      "flags":{}
+    },
+    {
+      "label": "NPCs",
+      "type": "Actor",
+      "name": "npcs",
+      "path": "packs/npcs",
+      "system":"pbta",
+      "private":false,
+      "flags":{}
+    },
+    {
+      "label": "Playbooks",
+      "type": "Item",
+      "name": "playbooks",
+      "path": "packs/playbooks",
+      "system":"pbta",
+      "private":false,
+      "flags":{}
+    },
+    {
+      "label": "Rollable Tables",
+      "type": "RollTable",
+      "name": "rollable-tables",
+      "path": "packs/rollable-tables",
+      "system":"pbta",
+      "private":false,
+      "flags":{}
+    }
+  ]
+}
