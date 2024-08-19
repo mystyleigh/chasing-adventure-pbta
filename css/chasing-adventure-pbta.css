@@ -1,0 +1,95 @@
+/* Fonts */
+@font-face {
+  font-family: "Friends Font";
+  src: url("./fonts/GABRWFFR.TTF") format("truetype");
+}
+
+.pbta.sheet {
+}
+
+.pbta.sheet section.window-content {
+  background-color: #ffffff;
+  color: black;
+}
+.pbta.sheet .cell__title {
+  color: #2e9096;
+  font: 1.2em "Friends Font";
+}
+
+.pbta.sheet .window-header {
+  background-color: #2e9096;
+}
+
+.pbta.sheet .window-content {
+  background-image: url("./images/sheetbg.jpg");
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+}
+
+.pbta.sheet input,
+.pbta.sheet button,
+.pbta.sheet select,
+.pbta.sheet textarea {
+  background: rgba(255, 255, 255, 0.6784313725);
+  color: black;
+  border: 0.5px solid rgba(0, 0, 0, 0.3882352941);
+}
+.pbta.sheet input:disabled,
+.pbta.sheet button:disabled,
+.pbta.sheet select:disabled,
+.pbta.sheet textarea:disabled {
+  background: rgba(255, 255, 255, 0.6784313725);
+  color: grey;
+}
+.pbta.sheet .sheet-wrapper .editor-content, .pbta.sheet .editor-content {
+  background: rgba(255, 255, 255, 0.6784313725);
+  border: 0.5px solid rgba(0, 0, 0, 0.3882352941);
+  padding: 0 4px;
+  border-radius: 4px;
+  height: 100%;
+  min-height: 45px;
+}
+.pbta.sheet .tabs {
+  border-bottom: 2px solid #000000;
+}
+.pbta.sheet .sheet-tabs.tabs > a.item {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-style: italic;
+  background-color: #2e9096;
+  color: white;
+}
+.pbta.sheet .sheet-tabs.tabs > a.item.active, .pbta.sheet .sheet-tabs.tabs > a.item.active:hover {
+  background-color: #000000;
+  color: white;
+}
+.pbta.sheet .sheet-tabs.tabs > a.item:hover, .pbta.sheet .sheet-tabs.tabs > a.item:focus {
+  background-color: #bccfd3;
+  color: #2e9096;
+  font-weight: bold;
+}
+.pbta.sheet .sheet-attributes {
+  position: relative;
+}
+.pbta.sheet .sheet-attributes .cell--stats .stat {
+  background: #2e9096;
+  color: white;
+}
+.pbta.sheet .sheet-attributes .cell--stats .stat .cell__title {
+  color: white;
+  font: 1.2em "Friends Font";
+}
+.pbta.sheet .sheet-attributes .cell--stats .stat:hover {
+  background: #515151;
+}
+.pbta.sheet .sheet-attributes .cell--stats .stat .stat-value {
+  border: 1px solid grey;
+}
+
+.window-app .window-header {
+  background-color: #303030;
+}
+
+.window-content{
+  background-color: #303030 !important;
+}
