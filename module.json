@@ -1,83 +1,94 @@
 {
   "id": "chasing-adventure-pbta",
-  "name": "chasing-adventure-pbta",
   "title": "Chasing Adventure (PbtA)",
   "description": "Chasing Adventure custom sheet and compendium module, to be used with Asacolips' Powered by the Apocalypse system",
-  "url":"https://github.com/mystyleigh/chasing-adventure-pbta",
-  "manifest":"https://raw.githubusercontent.com/mystyleigh/chasing-adventure-pbta/main/module.json",
-  "download":"https://github.com/mystyleigh/chasing-adventure-pbta/archive/refs/tags/v0.1.0.zip",
+  "url": "https://github.com/mystyleigh/chasing-adventure-pbta",
+  "manifest": "https://raw.githubusercontent.com/mystyleigh/chasing-adventure-pbta/main/module.json",
+  "download": "https://github.com/mystyleigh/chasing-adventure-pbta/archive/refs/tags/v0.1.0.zip",
   "authors": [
     {
       "name": "Leigh Ann Kinnison",
-      "discord": "mystyleigh",
-      "flags": {}
+      "discord": "mystyleigh"
     }
   ],
-  "version": "0.1.0",
+  "version": "0.2.0",
   "compatibility": {
     "minimum": "11",
     "verified": "11.315"
   },
-  "relationships":{
-      "systems":[
-         {
-            "id":"pbta",
-            "type":"system",
-            "manifest":"https://asacolips-artifacts.s3.amazonaws.com/pbta/0.7.4/system.json",
-            "compatibility":{
-               "verified":"0.7.4"
-            }
-         }
-      ]
-   },
-  "esmodules":[
-     "./module/chasing-adventure-pbta.mjs"
+  "relationships": {
+    "systems": [
+      {
+        "id": "pbta",
+        "type": "system",
+        "manifest": "https://asacolips-artifacts.s3.amazonaws.com/pbta/0.7.4/system.json",
+        "compatibility": {
+          "verified": "0.7.4"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "module/chasing-adventure-pbta.mjs"
+  ],
+  "styles": [
+    "css/chasing-adventure-pbta.css"
   ],
   "packs": [
     {
-      "label": "Items",
-      "type": "Item",
       "name": "items",
+      "label": "Items",
       "path": "packs/items",
-      "system":"pbta",
-      "private":false,
-      "flags":{}
+      "type": "Item",
+      "system": "pbta",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
-      "label": "Moves",
-      "type": "Item",
       "name": "moves",
+      "label": "Moves",
       "path": "packs/moves",
-      "system":"pbta",
-      "private":false,
-      "flags":{}
-    },
-    {
-      "label": "NPCs",
-      "type": "Actor",
-      "name": "npcs",
-      "path": "packs/npcs",
-      "system":"pbta",
-      "private":false,
-      "flags":{}
-    },
-    {
-      "label": "Playbooks",
       "type": "Item",
-      "name": "playbooks",
-      "path": "packs/playbooks",
-      "system":"pbta",
-      "private":false,
-      "flags":{}
+      "system": "pbta",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
-      "label": "Rollable Tables",
-      "type": "RollTable",
+      "name": "npcs",
+      "label": "NPCs",
+      "path": "packs/npcs",
+      "type": "Actor",
+      "system": "pbta",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "playbooks",
+      "label": "Playbooks",
+      "path": "packs/playbooks",
+      "type": "Item",
+      "system": "pbta",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
       "name": "rollable-tables",
+      "label": "Rollable Tables",
       "path": "packs/rollable-tables",
-      "system":"pbta",
-      "private":false,
-      "flags":{}
+      "type": "RollTable",
+      "system": "pbta",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ]
 }
